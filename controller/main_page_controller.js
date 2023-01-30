@@ -6,6 +6,11 @@ const getPage = async (req, res) => {
   res.render("index", { messageList: myList });
 };
 
+const getAboutPage = (req,res)=>{
+  res.render("about");
+}
+
 module.exports = {
   getPage,
+  getAboutPage
 };
