@@ -1,5 +1,9 @@
+const {getData} = require("../service/main_service");
+
 const getPage = async (req, res) => {
-  res.render("index", { messageList: ["fff", "ssss"] });
+  const myList = await getData();
+  console.log(myList);
+  res.render("index", { messageList: myList });
 };
 
 module.exports = {
