@@ -14,7 +14,6 @@ app.use("/", main_router);
 
 const start = async () => {
   try {
-    // await connectionDB(process.env)
     app.listen(port, () => {
       console.log(`Server listen on port ${port}`);
     });
